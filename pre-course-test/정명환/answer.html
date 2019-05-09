@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .row {
+    width: 400px;
+    height: 300px;
+  }
+  .row .left-tab, .right-content, .item, .footer{
+    border : 1px solid;
+  }
+  .left-tab {   
+    float: left;
+    width: 28%;
+    background-color: orange;
+  }
+  .left-tab .item {
+    font-size: 14px;
+    height : 30px;
+  }
+  .left-tab .footer {
+    font-size: 14px;
+    height: 206px;
+  }
+  .left-tab .footer span {
+    position: absolute;
+    top: 290px;
+  }
+  .item span:hover {
+    color:powderblue;
+  }
+  .right-content {
+    float: left;
+    width: 72%;
+    background-color: pink;
+    padding-left: 20px;
+    height: 298px;
+  }
+  .button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+</style>
+<body>
+  <section class="row">
+    <section class="left-tab">
+      <nav class="item">
+        <span>news</span>
+      </nav>
+      <nav class="item">
+        <span>posts</span>
+      </nav>
+      <nav class="item">
+        <span>profile</span>
+      </nav>
+      <footer class="footer">
+        <span>2019 Ebay Korea</span>
+      </footer>
+    </section>
+    <section class="right-content">
+      <section class="content">
+          <h2>Hello Ebay</h2>
+          <button class="button">Read More...</button>
+      </section>
+    </section>
+  </section>
+</body>
+<script src="./javascript.js"></script>
+</html>
